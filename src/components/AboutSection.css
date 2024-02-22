@@ -1,0 +1,68 @@
+/* AboutSection.css */
+
+/* Container */
+.about-section {
+    background-color: black; /* Dark gray background */
+    color: #ffd700; /* Gold text color */
+    padding: 40px; /* Increase padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add drop shadow */
+  }
+  
+  /* Heading */
+  .about-section h2 {
+    font-size: 24px; /* Larger font size */
+    margin-bottom: 20px; /* Add margin */
+  }
+  
+  /* Text */
+  .about-section p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    background: linear-gradient(90deg, rgb(2, 2, 2) 0%, rgb(26, 23, 23) 100%);
+    border-radius: 5px;
+    animation: fadeIn 3s ease-out;
+
+  }
+  
+  /* Image */
+  .about-section img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; /* Rounded corners */
+    animation: fadeIn 5s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-300px); /* Slide up 20px */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide back to original position */
+    }
+  }
+  
+  /* Hover effect */
+  .about-section:hover {
+ /* Darken background on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 20px; /* Decrease padding on smaller screens */
+    }
+    .about-section h2 {
+      font-size: 20px; /* Decrease font size on smaller screens */
+    }
+    .about-section p {
+      font-size: 14px; /* Decrease font size on smaller screens */
+    }
+  }
+  
