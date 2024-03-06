@@ -1,0 +1,35 @@
+.service-container {
+    background-color:black;
+    text-align:center;
+    color: #ffd700;
+    height: auto;
+}
+
+.service-container h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.service-container h2 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.service-container p {
+    background-color: linear-gradient(90deg, rgb(2, 2, 2) 0%, rgb(26, 23, 23) 100%);
+    padding-bottom: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-300px); /* Slide up 20px */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide back to original position */
+    }
+  }
